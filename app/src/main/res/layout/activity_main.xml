@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_color"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:text="Rockmex Music"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/chinese"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_corner"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/chinese_songs"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:padding="10dp"
+                android:src="@drawable/chinese" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Chinese Songs"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/korean"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/chinese"
+            android:background="@drawable/round_corner"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/korean_songs"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:padding="10dp"
+                android:src="@drawable/korean" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Korean Songs"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/english"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_below="@id/chinese"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_corner"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/english_songs"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:padding="10dp"
+                android:src="@drawable/english" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="English Songs"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/spanish"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_below="@id/korean"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/english"
+            android:background="@drawable/round_corner"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/spanish_songs"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:padding="10dp"
+                android:src="@drawable/spanish" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Spanish Songs"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
